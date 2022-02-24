@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <!-- Tha afhnw shmeiwseis se polla shmeia wste na mhn xasw ton mpousoula mou edw mesa... -->
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <title>GNS Hosting</title>
+        <!-- Apo edw kai katw einai to styling me CSS kai ta fonts apo to google-fonts 
+            kai apo to BootstrapCDN kai kapoia icons apo alles istoselides -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+        <!-- Navigation Buttons, ta koumpia gia tis upoloipes selides ths istoselidas -->
+            <nav>
+                <a href="index.html"><img src="images/logo.png" class="headerlogo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">PLANS</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <!-- MainText tou Header ths istoselidas -->
+        <div class="text-box">
+            <h1>Greek North Side Hosting</h1>
+            <p>We are the cheapest and the fastest. All in all, we are the BEST!</p>
+            <a href="" class="hero-btn">Visit Us To Learn More</a>
+        </div>
+        </section>
+        <!-- MENU JAVASCRIPT GIA KINHTA/TABLET
+        Mou bghke h panagia gia na to brw auto... Sto FireFox den douleuei pantws
+        to Menu gia ta kinhta/tablet. Den to dokimasa se alla browsers alla to UI einai
+        opws to thelw apla den jerw ama to UX douleuei. -->
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+
+        <!-- OUR HOSTING PLANS -->
+
+        <section class="ourhostingplans">
+            <h1>Our Hosting Plans</h1>
+            <p>Check out all of our plans and choose the one that suits your requirements.</p>
+            <div class="row">
+              <div class="plans">
+                <h3>Discord Bot</h3>
+                <p>We will host AND develop your discord bot if you ask us to! Hosting your discord bot
+                   on our servers will give you 100% control of your bot via our recoded, fast and modern
+                   Control Panel, the AAPanel.
+                </p>
+              </div>
+              <div class="plans">
+                <h3>Gaming Server Host</h3>
+                <p>Host a server for the game you and your friends love, join and have fun together!
+                    We host in all 7 continents of the world!
+                </p>
+              </div>
+              <div class="plans">
+                <h3>Cloud VM</h3>
+                <p>You need extra space for your files? Host a cloud (sftp) vm and store all your
+                    files and data in it! Our servers are backing up daily so there's no danger
+                    of data loss. 
+                </p>
+              </div>
+            </div>
+        </section>
+
+        <!-- TOP 3 HOSTING CONTINENTS - Oi top 3 hpeiroi me tous perissoterous xrhstes twn server ths
+        GNS Hosting (Greek North Side Hosting) -->
+
+        <section class="topcontinents">
+            <h1>Top 3 Continents</h1>
+            <p>These are the top 3 most popular continents our clients host from/to.</p>
+
+            <div class="row">
+                <div class="continents-col">
+                    <img src="images/france.jpg">
+                    <div class="layer">
+                        <h3>EUROPE</h3>
+                    </div>
+                </div>
+                <div class="continents-col">
+                    <img src="images/usa.jpg">
+                    <div class="layer">
+                        <h3>N.AMERICA</h3>
+                    </div>
+                </div>
+                <div class="continents-col">
+                    <img src="images/asia.jpg">
+                    <div class="layer">
+                        <h3>ASIA</h3>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Customer Ratings -->
+
+        <section class="ratings">
+            <h1>What Our Customers Say</h1>
+            <p>Our customers' opinion always counts. Write yours by contacting us and we will add it on our website!</p>
+
+            <div class="row">
+                <div class="ratings-col">
+                    <img src="images/client1.jpg">
+                    <div>
+                        <p>I really love GNS Hosting. Theirs servers are super fast and the control panel is 
+                            well made. What is more to say, the service is reliable and constantly active!
+                            I really can't believe how like I am to find this company! Keep up the good work
+                            guys! YOu are the best!!!
+                        </p>
+                        <h3>Christopher Walker</h3>
+                        <i class="fa"></i>
+                        <i class="fa"></i>
+                        <i class="fa"></i>
+                        <i class="fa"></i>
+                        <i class="fa"></i>
+                    </div>
+                </div>
+                <div class="ratings-col">
+                    <img src="images/client2.jpg">
+                    <div>
+                        <p>I'm using their Discord Bot hosting and develope plan and I am happy wiht it!
+                            Their service is active all the time and they are really helpgul, they really
+                            know everything about hosting and how to fix most of the problems/errors.
+                        </p>
+                        <h3>Zoe Grey</h3>
+                        <i class="fa"></i>
+                        <i class="fa"></i>
+                        <i class="fa"></i>
+                        <i class="fa"></i>
+                        <i class="fa"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section class="cta">
+            <h1>Contact Us IF You Need Us!</h1>
+            <a href="" class="hero-btn">CONTACT US</a>
+        </section>
+
+        <!-- Footer -->
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>GNS Hosting (Greek North Side Hosting) is a small worldwide hosting service company.<br>
+                Created by Greek people located in the heart of Macedonia, Thessaloniki.<br>
+                Our goal is to be the best hosting service company that exists.<br>
+                Help us achieve it by leaving your opinion and suggesting changes or fixes.
+            </p>
+            <br>
+            <hr>
+            <br>
+            <p>Made by Zacharias Chatsikidis</p>
+        </section>
+
+        <!-- KAPOIA PRAGMATA DEN DOULEUOUN OPWS 8A EPREPE! PROSPA8ISA NA TA FTIAJW ALLA
+        DEN KATAFERA NA TO EPIDIWR8WSW! -->
+    </body>
+</html>
